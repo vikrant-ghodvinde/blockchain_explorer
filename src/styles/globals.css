@@ -2,26 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #1c1c1c;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.tooltip::after,
+.tooltip::before {
+  background: rgba(107 114 128, 1);
+  text-wrap: wrap;
+  word-break: break-all;
+  font-weight: 400;
+}
+
+.shadow-full-match {
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, .08);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  /* padding: 30px 0; */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+
+/* INPUT SELECT */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #000 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 1rem center/.5rem .63rem;
+}
+
+select.select-sm {
+  background: #000 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5rem center/.5rem .63rem;
+}
+
+/* EXTENDS */
+.decoration-none {
+  text-decoration: none !important;
 }
