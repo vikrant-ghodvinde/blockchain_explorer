@@ -21,7 +21,7 @@ const Batches: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
               <div className="relative">
@@ -32,17 +32,17 @@ const Batches: FC = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Batch</th>
-                  <th className="text-sm text-white font-bold">Status</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Batch</th>
+                  <th className="text-sm text-black font-bold">Status</th>
+                  <th className="text-sm text-black font-bold">
                     Committed Block
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Committed Tx Hash
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -51,14 +51,14 @@ const Batches: FC = () => {
                       Age
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Finalized Block
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Finalized Tx Hash
                   </th>
-                  <th className="text-sm text-white font-bold">Blocks</th>
-                  <th className="text-sm text-white font-bold">Txn</th>
+                  <th className="text-sm text-black font-bold">Blocks</th>
+                  <th className="text-sm text-black font-bold">Txn</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,7 +69,7 @@ const Batches: FC = () => {
                     </Link>
                   </td>
                   <td>
-                    <span className="text-[10px] py-1 px-2 rounded-md bg-gray-700">
+                    <span className="text-[10px] py-1 px-2 rounded-md bg-light">
                       Committed
                     </span>
                   </td>
@@ -113,7 +113,7 @@ const Batches: FC = () => {
                     </Link>
                   </td>
                   <td>
-                    <span className="text-[10px] py-1 px-2 rounded-md bg-gray-700">
+                    <span className="text-[10px] py-1 px-2 rounded-md bg-light">
                       Committed
                     </span>
                   </td>

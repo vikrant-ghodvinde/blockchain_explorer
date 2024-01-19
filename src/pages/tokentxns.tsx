@@ -22,7 +22,7 @@ const TokenTxns: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
               <div className="relative">
@@ -36,9 +36,9 @@ const TokenTxns: FC = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <span
                       className="tooltip tooltip-right before:text-xs"
                       data-tip="Function executed based on decoded input data. For unidentified functions, method ID is displayed instead."
@@ -46,17 +46,17 @@ const TokenTxns: FC = () => {
                       <i className="fas fa-circle-exclamation"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">Txn Hash</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Txn Hash</th>
+                  <th className="text-sm text-black font-bold">
                     Method
                     <span
                       className="tooltip before:text-xs"
                       data-tip="Function executed based on decoded input data. For unidentified functions, method ID is displayed instead."
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -65,11 +65,11 @@ const TokenTxns: FC = () => {
                       Age
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">From</th>
-                  <th className="text-sm text-white font-bold"></th>
-                  <th className="text-sm text-white font-bold">To</th>
-                  <th className="text-sm text-white font-bold">Value</th>
-                  <th className="text-sm text-white font-bold">Token</th>
+                  <th className="text-sm text-black font-bold">From</th>
+                  <th className="text-sm text-black font-bold"></th>
+                  <th className="text-sm text-black font-bold">To</th>
+                  <th className="text-sm text-black font-bold">Value</th>
+                  <th className="text-sm text-black font-bold">Token</th>
                 </tr>
               </thead>
               <tbody>
@@ -77,7 +77,7 @@ const TokenTxns: FC = () => {
                   <td>
                     <button
                       type="button"
-                      className="w-5 h-5 flex items-center justify-center text-[10px] rounded bg-dark hover:bg-primary hover:text-black transition-all duration-300"
+                      className="w-5 h-5 flex items-center justify-center text-[10px] rounded bg-light hover:bg-primary hover:text-black transition-all duration-300"
                     >
                       <i className="fas fa-eye"></i>
                     </button>
@@ -89,7 +89,7 @@ const TokenTxns: FC = () => {
                   </td>
                   <td>
                     <span
-                      className="text-[10px] py-0.5 px-2 rounded-md bg-gray-700 tooltip before:text-xs"
+                      className="text-[10px] py-0.5 px-2 rounded-md bg-light tooltip before:text-xs"
                       data-tip="Transfer"
                     >
                       Transfer
@@ -122,7 +122,7 @@ const TokenTxns: FC = () => {
                     </div>
                   </td>
                   <td>
-                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-950 w-6 h-6 rounded-full">
+                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-50 w-6 h-6 rounded-full">
                       <i className="fas fa-right-long"></i>
                     </span>
                   </td>
@@ -169,7 +169,7 @@ const TokenTxns: FC = () => {
                   <td>
                     <button
                       type="button"
-                      className="w-5 h-5 flex items-center justify-center text-[10px] rounded bg-dark hover:bg-primary hover:text-black transition-all duration-300"
+                      className="w-5 h-5 flex items-center justify-center text-[10px] rounded bg-light hover:bg-primary hover:text-black transition-all duration-300"
                     >
                       <i className="fas fa-eye"></i>
                     </button>
@@ -181,7 +181,7 @@ const TokenTxns: FC = () => {
                   </td>
                   <td>
                     <span
-                      className="text-[10px] py-0.5 px-2 rounded-md bg-gray-700 tooltip before:text-xs"
+                      className="text-[10px] py-0.5 px-2 rounded-md bg-light tooltip before:text-xs"
                       data-tip="Transfer"
                     >
                       Transfer
@@ -214,7 +214,7 @@ const TokenTxns: FC = () => {
                     </div>
                   </td>
                   <td>
-                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-950 w-6 h-6 rounded-full">
+                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-50 w-6 h-6 rounded-full">
                       <i className="fas fa-right-long"></i>
                     </span>
                   </td>

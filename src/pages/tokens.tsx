@@ -23,9 +23,9 @@ const Tokens: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
-            <div className="relative w-full pb-4 mb-4 border-b border-gray-800 flex justify-end">
+            <div className="relative w-full pb-4 mb-4 border-b border-gray-100 flex justify-end">
               <TableSearch />
             </div>
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
@@ -37,11 +37,11 @@ const Tokens: FC = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">#</th>
-                  <th className="text-sm text-white font-bold">Token</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">#</th>
+                  <th className="text-sm text-black font-bold">Token</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -50,7 +50,7 @@ const Tokens: FC = () => {
                       Price
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -59,7 +59,7 @@ const Tokens: FC = () => {
                       Change (%)
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -68,7 +68,7 @@ const Tokens: FC = () => {
                       Volume (24H)
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button type="button" className="text-primary">
                       Circulating Market Cap
                     </button>
@@ -76,19 +76,19 @@ const Tokens: FC = () => {
                       className="tooltip before:text-xs"
                       data-tip="Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token."
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     On-Chain Market Cap
                     <span
                       className="tooltip before:text-xs"
                       data-tip="Calculated by multiplying the number of tokens in circulating supply across all chains with the current market price per token."
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"

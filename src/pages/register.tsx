@@ -72,7 +72,7 @@ const Register: NextPage = () => {
                         className="checkbox checkbox-sm checkbox-success"
                       />
                       <span
-                        className="text-white text-sm"
+                        className="text-black text-sm"
                         data-tip="Please do not check this box if you are using a public or shared PC"
                       >
                         I agree to the{" "}
@@ -92,7 +92,7 @@ const Register: NextPage = () => {
                         className="checkbox checkbox-sm checkbox-success"
                       />
                       <span
-                        className="text-white text-sm"
+                        className="text-black text-sm"
                         data-tip="Please do not check this box if you are using a public or shared PC"
                       >
                         I agree to receive the Scrollscan newsletter and

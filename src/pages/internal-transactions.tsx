@@ -21,7 +21,7 @@ const InternalTransactions: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
               <div className="relative">
@@ -36,10 +36,10 @@ const InternalTransactions: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Block</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Block</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -48,14 +48,14 @@ const InternalTransactions: NextPage = () => {
                       Age
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Parent Txn Hash
                   </th>
-                  <th className="text-sm text-white font-bold">Type</th>
-                  <th className="text-sm text-white font-bold">From</th>
-                  <th className="text-sm text-white font-bold"></th>
-                  <th className="text-sm text-white font-bold">To</th>
-                  <th className="text-sm text-white font-bold">Value</th>
+                  <th className="text-sm text-black font-bold">Type</th>
+                  <th className="text-sm text-black font-bold">From</th>
+                  <th className="text-sm text-black font-bold"></th>
+                  <th className="text-sm text-black font-bold">To</th>
+                  <th className="text-sm text-black font-bold">Value</th>
                 </tr>
               </thead>
               <tbody>
@@ -101,7 +101,7 @@ const InternalTransactions: NextPage = () => {
                     </div>
                   </td>
                   <td>
-                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-950 w-6 h-6 rounded-full">
+                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-50 w-6 h-6 rounded-full">
                       <i className="fas fa-right-long"></i>
                     </span>
                   </td>
@@ -173,7 +173,7 @@ const InternalTransactions: NextPage = () => {
                     </div>
                   </td>
                   <td>
-                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-950 w-6 h-6 rounded-full">
+                    <span className="flex items-center justify-center text-primary text-[8px] bg-green-50 w-6 h-6 rounded-full">
                       <i className="fas fa-right-long"></i>
                     </span>
                   </td>

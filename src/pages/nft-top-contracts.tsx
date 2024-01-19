@@ -23,9 +23,9 @@ const NftTopContracts: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
-            <div className="relative w-full pb-4 mb-4 border-b border-gray-800 flex items-center flex-col md:flex-row justify-end">
+            <div className="relative w-full pb-4 mb-4 border-b border-gray-100 flex items-center flex-col md:flex-row justify-end">
               <TimeFilter />
             </div>
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
@@ -37,81 +37,81 @@ const NftTopContracts: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">#</th>
-                  <th className="text-sm text-white font-bold">Collection</th>
-                  <th className="text-sm text-white font-bold">Type</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">#</th>
+                  <th className="text-sm text-black font-bold">Collection</th>
+                  <th className="text-sm text-black font-bold">Type</th>
+                  <th className="text-sm text-black font-bold">
                     Volume
                     <span
                       className="tooltip before:text-xs"
                       data-tip="This column is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Change(%)
                     <span
                       className="tooltip before:text-xs"
                       data-tip="This column is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Sales
                     <span
                       className="tooltip before:text-xs"
                       data-tip="This column is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Min Price (24H)
                     <span
                       className="tooltip before:text-xs"
                       data-tip="Lowest 24 hour last sale price for NFTs in this token contract"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Min Price (24H)
                     <span
                       className="tooltip before:text-xs"
                       data-tip="Highest 24 hour last sale price for NFTs in this token contract"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Transfers
                     <span
                       className="tooltip before:text-xs"
                       data-tip="This column displays the all-time total transfer count and is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Owners
                     <span
                       className="tooltip tooltip-left before:text-xs"
                       data-tip="This column is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Total Assets
                     <span
                       className="tooltip tooltip-left before:text-xs"
                       data-tip="This column is updated every few hours instead of in real-time"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
                 </tr>
@@ -126,10 +126,10 @@ const NftTopContracts: NextPage = () => {
                       className="flex items-center gap-1"
                     >
                       <div
-                        className="flex items-center gap-2 tooltip tooltip-right before:text-xs"
+                        className="inline-flex items-center gap-2 tooltip tooltip-right before:text-xs"
                         data-tip="0xbd3531da5cf5857e7cfaa92426877b022e612cf8"
                       >
-                        <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-dark">
+                        <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-light">
                           <Image
                             src="/images/nft/pudgypenguins_32.webp"
                             alt=""
@@ -177,10 +177,10 @@ const NftTopContracts: NextPage = () => {
                       className="flex items-center gap-1"
                     >
                       <div
-                        className="flex items-center gap-2 tooltip tooltip-right before:text-xs"
+                        className="inline-flex items-center gap-2 tooltip tooltip-right before:text-xs"
                         data-tip="0xbd3531da5cf5857e7cfaa92426877b022e612cf8"
                       >
-                        <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-dark">
+                        <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-light">
                           <Image
                             src="/images/nft/ageofdinodinosty_32.webp"
                             alt=""

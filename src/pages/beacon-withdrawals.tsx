@@ -22,9 +22,9 @@ const BeaconWithdrawals: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
-            <div className="relative w-full pb-4 mb-4 border-b border-gray-800 flex justify-end">
+            <div className="relative w-full pb-4 mb-4 border-b border-gray-100 flex justify-end">
               <TableSearch />
             </div>
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
@@ -40,11 +40,11 @@ const BeaconWithdrawals: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Index</th>
-                  <th className="text-sm text-white font-bold">Block</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Index</th>
+                  <th className="text-sm text-black font-bold">Block</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -53,11 +53,11 @@ const BeaconWithdrawals: NextPage = () => {
                       Age
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Validator Index
                   </th>
-                  <th className="text-sm text-white font-bold">Recipient</th>
-                  <th className="text-sm text-white font-bold">Value</th>
+                  <th className="text-sm text-black font-bold">Recipient</th>
+                  <th className="text-sm text-black font-bold">Value</th>
                 </tr>
               </thead>
               <tbody>

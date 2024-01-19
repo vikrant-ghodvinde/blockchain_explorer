@@ -10,21 +10,22 @@
 }
 
 body {
-  background: #1c1c1c;
-  color: #fff;
+  background: #f8f9fa;
+  color: #000;
   min-height: 100vh;
 }
 
 .tooltip::after,
 .tooltip::before {
-  background: rgba(107 114 128, 1);
+  background: #1c1c1c;
+  color: #fff;
   text-wrap: wrap;
   word-break: break-all;
   font-weight: 400;
 }
 
 .shadow-full-match {
-  box-shadow: 0 0 15px 0 rgba(255, 255, 255, .08);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
 }
 
 .scrollbar-thin::-webkit-scrollbar {
@@ -40,14 +41,45 @@ body {
 select {
   appearance: none;
   -webkit-appearance: none;
-  background: #000 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 1rem center/.5rem .63rem;
+  background: #fff
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+    no-repeat right 1rem center/.5rem 0.63rem;
 }
 
 select.select-sm {
-  background: #000 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5rem center/.5rem .63rem;
+  background: #fff
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+    no-repeat right 0.5rem center/.5rem 0.63rem;
 }
 
 /* EXTENDS */
 .decoration-none {
   text-decoration: none !important;
+}
+
+/* TABLE */
+.table :where(thead, tbody) :where(tr:not(:last-child)),
+.table :where(thead, tbody) :where(tr:first-child:last-child) {
+  border-color: rgba(243, 244, 246, 1);
+}
+
+/* CHECKBOX */
+.checkbox:checked,
+.checkbox[checked="true"],
+.checkbox[aria-checked="true"] {
+  background-image: linear-gradient(
+      -45deg,
+      transparent 65%,
+      var(--chkbg) 65.99%
+    ),
+    linear-gradient(45deg, transparent 75%, var(--chkbg) 75.99%),
+    linear-gradient(-45deg, var(--chkbg) 40%, transparent 40.99%),
+    linear-gradient(
+      45deg,
+      var(--chkbg) 30%,
+      #fff 30.99%,
+      #fff 40%,
+      transparent 40.99%
+    ),
+    linear-gradient(-45deg, #fff 50%, var(--chkbg) 50.99%);
 }

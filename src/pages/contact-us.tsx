@@ -34,8 +34,8 @@ const ContactUs: NextPage = () => {
         <div className="relative">
           <div className="grid grid-cols-3 gap-4">
             <div className="relative col-span-3 md:col-span-2">
-              <div className="relative bg-black rounded-md">
-                <div className="p-4 border-b border-gray-800">
+              <div className="relative bg-white rounded-md">
+                <div className="p-4 border-b border-gray-100">
                   Feedback Form
                 </div>
                 <div className="relative p-4">
@@ -76,7 +76,7 @@ const ContactUs: NextPage = () => {
                         <input
                           type="text"
                           value={values.customSubject}
-                          className="w-full h-11 bg-black px-4 rounded-md outline-none border"
+                          className="w-full h-11 bg-white px-4 rounded-md outline-none border"
                           onChange={(e) =>
                             setValues({
                               ...values,
@@ -96,7 +96,7 @@ const ContactUs: NextPage = () => {
                       <input
                         type="text"
                         value={values.name}
-                        className="w-full h-11 bg-black px-4 rounded-md outline-none border"
+                        className="w-full h-11 bg-white px-4 rounded-md outline-none border"
                         onChange={(e) =>
                           setValues({ ...values, name: e.target.value })
                         }
@@ -112,7 +112,7 @@ const ContactUs: NextPage = () => {
                       <input
                         type="email"
                         value={values.email}
-                        className="w-full h-11 bg-black px-4 rounded-md outline-none border"
+                        className="w-full h-11 bg-white px-4 rounded-md outline-none border"
                         onChange={(e) =>
                           setValues({ ...values, email: e.target.value })
                         }
@@ -127,7 +127,7 @@ const ContactUs: NextPage = () => {
                       </label>
                       <textarea
                         value={values.message}
-                        className="w-full h-48 bg-black py-3 px-4 rounded-md outline-none border"
+                        className="w-full h-48 bg-white py-3 px-4 rounded-md outline-none border"
                         onChange={(e) =>
                           setValues({ ...values, message: e.target.value })
                         }
@@ -155,8 +155,8 @@ const ContactUs: NextPage = () => {
               </div>
             </div>
             <div className="relative col-span-3 md:col-span-1">
-              <div className="relative bg-black rounded-md">
-                <div className="p-4 border-b border-gray-800">
+              <div className="relative bg-white rounded-md">
+                <div className="p-4 border-b border-gray-100">
                   Helpful Links
                 </div>
                 <div className="relative p-4">

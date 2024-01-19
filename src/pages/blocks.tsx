@@ -21,7 +21,7 @@ const Blocks: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
               <div className="relative">
@@ -32,10 +32,10 @@ const Blocks: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Block</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Block</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -44,11 +44,11 @@ const Blocks: NextPage = () => {
                       Age
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">Txn</th>
-                  <th className="text-sm text-white font-bold">Sequencer</th>
-                  <th className="text-sm text-white font-bold">Gas Used</th>
-                  <th className="text-sm text-white font-bold">Gas Limit</th>
-                  <th className="text-sm text-white font-bold">Reward</th>
+                  <th className="text-sm text-black font-bold">Txn</th>
+                  <th className="text-sm text-black font-bold">Sequencer</th>
+                  <th className="text-sm text-black font-bold">Gas Used</th>
+                  <th className="text-sm text-black font-bold">Gas Limit</th>
+                  <th className="text-sm text-black font-bold">Reward</th>
                 </tr>
               </thead>
               <tbody>

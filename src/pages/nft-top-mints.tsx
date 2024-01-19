@@ -21,23 +21,23 @@ const NftTopMints: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="relative w-full pb-4 mb-4 flex items-center flex-col md:flex-row justify-end">
               <TimeFilter />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">#</th>
-                  <th className="text-sm text-white font-bold">Collection</th>
-                  <th className="text-sm text-white font-bold">Type</th>
-                  <th className="text-sm text-white font-bold">Mints</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">#</th>
+                  <th className="text-sm text-black font-bold">Collection</th>
+                  <th className="text-sm text-black font-bold">Type</th>
+                  <th className="text-sm text-black font-bold">Mints</th>
+                  <th className="text-sm text-black font-bold">
                     Unique Minters
                   </th>
-                  <th className="text-sm text-white font-bold">Total Owners</th>
-                  <th className="text-sm text-white font-bold">Total Assets</th>
+                  <th className="text-sm text-black font-bold">Total Owners</th>
+                  <th className="text-sm text-black font-bold">Total Assets</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,10 +47,10 @@ const NftTopMints: NextPage = () => {
                     <Link
                       href="/"
                       target="_blank"
-                      className="flex items-center gap-2 tooltip tooltip-right before:text-xs"
+                      className="inline-flex items-center gap-2 tooltip tooltip-right before:text-xs"
                       data-tip="0x9236ca1d6e59f8ab672269443e13669d0bd5b353"
                     >
-                      <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-dark">
+                      <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-light">
                         <Image
                           src="/images/nft/mintid_32.webp"
                           alt=""
@@ -96,10 +96,10 @@ const NftTopMints: NextPage = () => {
                     <Link
                       href="/"
                       target="_blank"
-                      className="flex items-center gap-2 tooltip tooltip-right before:text-xs"
+                      className="inline-flex items-center gap-2 tooltip tooltip-right before:text-xs"
                       data-tip="0x9236ca1d6e59f8ab672269443e13669d0bd5b353"
                     >
-                      <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-dark">
+                      <div className="relative w-8 min-w-8 h-8 rounded-full overflow-hidden bg-light">
                         <Image
                           src="/images/nft/mintid_32.webp"
                           alt=""

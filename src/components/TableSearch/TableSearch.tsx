@@ -5,11 +5,11 @@ const TableSearch: FC = () => {
     <div className="relative group z-50">
       <button
         type="button"
-        className="btn btn-sm bg-dark text-xs group-focus-within:bg-primary group-focus-within:text-black"
+        className="btn-sm rounded-md bg-light text-xs text-gray-500 group-focus-within:bg-primary group-focus-within:text-black"
       >
         <i className="fas fa-magnifying-glass"></i>
       </button>
-      <div className="absolute right-0 -bottom-16 w-72 h-14 px-2 bg-dark rounded-md shadow-full-match flex items-center justify-center invisible opacity-0 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-300">
+      <div className="absolute right-0 -bottom-16 w-72 h-14 px-2 bg-light rounded-md shadow-full-match flex items-center justify-center invisible opacity-0 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-300">
         <input
           type="text"
           className="w-full h-10 outline-none border border-r-0 bg-transparent px-3 rounded-tl-md rounded-bl-md text-sm"

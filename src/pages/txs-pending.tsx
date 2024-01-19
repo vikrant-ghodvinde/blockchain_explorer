@@ -22,12 +22,12 @@ const TxsPending: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
-            <div className="relative w-full pb-4 mb-4 border-b border-gray-800 flex justify-between">
+            <div className="relative w-full pb-4 mb-4 border-b border-gray-100 flex justify-between">
               <Link
                 href="/"
-                className="relative btn btn-sm py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
+                className="relative btn btn-sm border-0 py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
               >
                 <i className="fas fa-chart-column me-1"></i> Pending Transaction
                 Pool
@@ -41,10 +41,10 @@ const TxsPending: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Txn Hash</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Txn Hash</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -53,17 +53,17 @@ const TxsPending: NextPage = () => {
                       Nonce
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     Method
                     <span
                       className="tooltip before:text-xs"
                       data-tip="Function executed based On decoded input data. For unidentified functions, method ID Is displayed instead."
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">Last Seen</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Last Seen</th>
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -72,7 +72,7 @@ const TxsPending: NextPage = () => {
                       Gas Limit
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     <button
                       type="button"
                       className="text-primary tooltip before:text-xs"
@@ -81,9 +81,9 @@ const TxsPending: NextPage = () => {
                       Gas Price
                     </button>
                   </th>
-                  <th className="text-sm text-white font-bold">From</th>
-                  <th className="text-sm text-white font-bold">To</th>
-                  <th className="text-sm text-white font-bold">Value</th>
+                  <th className="text-sm text-black font-bold">From</th>
+                  <th className="text-sm text-black font-bold">To</th>
+                  <th className="text-sm text-black font-bold">Value</th>
                 </tr>
               </thead>
               <tbody>
@@ -96,7 +96,7 @@ const TxsPending: NextPage = () => {
                   <td>3</td>
                   <td>
                     <span
-                      className="text-[10px] py-0.5 px-2 rounded-md bg-gray-700 tooltip before:text-xs"
+                      className="text-[10px] py-0.5 px-2 rounded-md bg-light tooltip before:text-xs"
                       data-tip="Mint"
                     >
                       Mint
@@ -119,7 +119,7 @@ const TxsPending: NextPage = () => {
                         className="text-sm hover:text-primary tooltip before:text-xs"
                         data-tip="Apply filter by address"
                       >
-                        <i className="fas fa-filter text-xs"></i>
+                        <i className="fas fa-filter text-xs text-gray-500"></i>
                       </button>
                     </div>
                   </td>
@@ -137,7 +137,7 @@ const TxsPending: NextPage = () => {
                         className="text-sm hover:text-primary tooltip before:text-xs"
                         data-tip="Apply filter by address"
                       >
-                        <i className="fas fa-filter text-xs"></i>
+                        <i className="fas fa-filter text-xs text-gray-500"></i>
                       </button>
                     </div>
                   </td>
@@ -152,7 +152,7 @@ const TxsPending: NextPage = () => {
                   <td>3</td>
                   <td>
                     <span
-                      className="text-[10px] py-0.5 px-2 rounded-md bg-gray-700 tooltip before:text-xs"
+                      className="text-[10px] py-0.5 px-2 rounded-md bg-light tooltip before:text-xs"
                       data-tip="Mint"
                     >
                       Mint
@@ -175,7 +175,7 @@ const TxsPending: NextPage = () => {
                         className="text-sm hover:text-primary tooltip before:text-xs"
                         data-tip="Apply filter by address"
                       >
-                        <i className="fas fa-filter text-xs"></i>
+                        <i className="fas fa-filter text-xs text-gray-500"></i>
                       </button>
                     </div>
                   </td>
@@ -193,7 +193,7 @@ const TxsPending: NextPage = () => {
                         className="text-sm hover:text-primary tooltip before:text-xs"
                         data-tip="Apply filter by address"
                       >
-                        <i className="fas fa-filter text-xs"></i>
+                        <i className="fas fa-filter text-xs text-gray-500"></i>
                       </button>
                     </div>
                   </td>

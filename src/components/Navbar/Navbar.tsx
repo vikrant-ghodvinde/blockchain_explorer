@@ -25,8 +25,8 @@ const Navbar: FC = () => {
     router.pathname === "/nft-transfers" ||
     router.pathname === "/nft-latest-mints";
   return (
-    <div className="relative bg-black shadow-nav-s z-[999]">
-      <div className="py-2 border-b border-gray-800 hidden lg:block">
+    <div className="sticky top-0 left-0 lg:relative lg:top-auto lg:left-auto bg-white shadow-nav-s z-[999]">
+      <div className="py-2 border-b border-gray-100 hidden lg:block">
         <Container>
           <div className="py-2 flex items-center justify-between">
             <div className="flex items-center gap-x-2 text-sm">
@@ -68,7 +68,7 @@ const Navbar: FC = () => {
           </Link>
           <div className="relative flex items-center gap-x-4 z-[999]">
             <ul
-              className={`flex gap-x-3 lg:items-center fixed lg:relative top-[67px] lg:top-auto left-0 lg:left-auto w-full lg:w-auto bg-black lg:bg-transparent flex-col lg:flex-row ${
+              className={`flex gap-x-3 lg:items-center fixed lg:relative top-[67px] lg:top-auto left-0 lg:left-auto w-full lg:w-auto bg-white lg:bg-transparent flex-col lg:flex-row ${
                 menuToggle ? "max-h-[calc(100%-67px)]" : "max-h-0"
               } lg:max-h-auto lg:overflow-visible transition-all duration-500 overflow-y-hidden`}
             >
@@ -92,11 +92,11 @@ const Navbar: FC = () => {
                   Blockchain
                 </a>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-[-80%] w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
-                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-black p-3">
+                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
                       <Link
                         href="/transactions"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/transactions"
                             ? "text-primary"
                             : ""
@@ -108,7 +108,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/txs-pending"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/txs-pending"
                             ? "text-primary"
                             : ""
@@ -120,7 +120,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/internal-transactions"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/internal-transactions"
                             ? "text-primary"
                             : ""
@@ -132,7 +132,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/beacon-deposit"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/beacon-deposit"
                             ? "text-primary"
                             : ""
@@ -144,7 +144,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/beacon-withdrawals"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/beacon-withdrawals"
                             ? "text-primary"
                             : ""
@@ -153,11 +153,11 @@ const Navbar: FC = () => {
                         Beacon Withdrawals
                       </Link>
                     </li>
-                    <hr className="my-3 border-gray-800" />
+                    <hr className="my-3 border-gray-100" />
                     <li>
                       <Link
                         href="/blocks"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/blocks" ? "text-primary" : ""
                         }`}
                       >
@@ -167,18 +167,18 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/batches"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/batches" ? "text-primary" : ""
                         }`}
                       >
                         View Batches
                       </Link>
                     </li>
-                    <hr className="my-3 border-gray-800" />
+                    <hr className="my-3 border-gray-100" />
                     <li>
                       <Link
                         href="/accounts"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/accounts" ? "text-primary" : ""
                         }`}
                       >
@@ -188,7 +188,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/verified-contracts"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/verified-contracts"
                             ? "text-primary"
                             : ""
@@ -210,11 +210,11 @@ const Navbar: FC = () => {
                   Tokens
                 </a>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
-                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-black p-3">
+                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
                       <Link
                         href="/tokens"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/tokens" ? "text-primary" : ""
                         }`}
                       >
@@ -225,7 +225,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/tokentxns"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/tokentxns" ? "text-primary" : ""
                         }`}
                       >
@@ -246,11 +246,11 @@ const Navbar: FC = () => {
                   NFTs
                 </a>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
-                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-black p-3">
+                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
                       <Link
                         href="/nft-top-contracts"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/nft-top-contracts" ? "text-primary" : ""
                         }`}
                       >
@@ -260,7 +260,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/nft-top-mints"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/nft-top-mints" ? "text-primary" : ""
                         }`}
                       >
@@ -270,7 +270,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/nft-transfers"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/nft-transfers" ? "text-primary" : ""
                         }`}
                       >
@@ -280,7 +280,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/nft-latest-mints"
-                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-dark ${
+                        className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
                           router.pathname === "/nft-latest-mints" ? "text-primary" : ""
                         }`}
                       >
@@ -295,11 +295,11 @@ const Navbar: FC = () => {
                   Resources
                 </a>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
-                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-black p-3">
+                  <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Charts And Stats
                       </Link>
@@ -307,7 +307,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Top Statistics
                       </Link>
@@ -315,7 +315,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Leaderboard
                       </Link>
@@ -323,7 +323,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Directory
                       </Link>
@@ -331,7 +331,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Newsletter
                       </Link>
@@ -339,7 +339,7 @@ const Navbar: FC = () => {
                     <li>
                       <Link
                         href="/"
-                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-dark"
+                        className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
                       >
                         Knowledge Base
                       </Link>
@@ -348,7 +348,7 @@ const Navbar: FC = () => {
                 </div>
               </li>
             </ul>
-            <div className="flex items-center gap-x-4 ps-4 border-l-0 lg:border-l border-gray-800">
+            <div className="flex items-center gap-x-4 ps-4 border-l-0 lg:border-l border-gray-100">
               <div
                 className="block lg:hidden text-lg"
                 onClick={() => setMenuToggle(!menuToggle)}

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <div className="relative w-full">
-      <div className="relative h-80 py-14 bg-[url('/images/banner.webp')] bg-center bg-[100%,100%] flex justify-center before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:opacity-80 ">
+      <div className="relative h-80 py-14 bg-[url('/images/banner.webp')] bg-center bg-[100%,100%] flex justify-center before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-white before:opacity-50 ">
         <Container>
           <div className="relative grid grid-rows-2 gap-4 w-full max-w-2xl mx-auto">
             <div>
@@ -15,8 +15,8 @@ const Home: NextPage = () => {
                 Scroll Blockchain Explorer
               </h2>
             </div>
-            <form className="relative w-full h-12 flex items-center bg-black border outline-none rounded-md overflow-hidden">
-              <select className="w-full max-w-24 h-full border-0 outline-none bg-black px-2 pr-3 text-sm">
+            <form className="relative w-full h-12 flex items-center bg-white border border-light outline-none rounded-md overflow-hidden">
+              <select className="select-sm w-full max-w-24 h-full border-0 outline-none bg-white px-2 pr-3 text-sm">
                 <option value="">All Filters</option>
                 <option value="">Addresses</option>
                 <option value="">Tokens</option>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
               />
               <button
                 type="submit"
-                className="relative w-20 h-full flex items-center justify-center bg-primary border border-primary bg-primary-gradient text-black"
+                className="relative w-20 h-full flex items-center justify-center bg-primary rounded-md bg-primary-gradient text-black"
               >
                 <i className="fas fa-magnifying-glass"></i>
               </button>
@@ -39,14 +39,14 @@ const Home: NextPage = () => {
           </div>
         </Container>
       </div>
-      <div className="relative w-full bg-dark">
+      <div className="relative w-full bg-light">
         <Container>
           <div className="relative lg:absolute top-[-80px] lg:left-[50%] lg:translate-x-[-50%] w-full max-w-[1399px] lg:px-3">
-            <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+            <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
               <div className="grid grid-cols-3 items-center">
-                <div className="relative col-span-3 lg:col-span-1 p-2 pb-4 lg:p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+                <div className="relative col-span-3 lg:col-span-1 p-2 pb-4 lg:p-4 border-b lg:border-b-0 lg:border-r border-gray-100">
                   <div className="grid">
-                    <div className="relative text-sm flex items-center gap-x-3 border-b border-gray-800 pb-4">
+                    <div className="relative text-sm flex items-center gap-x-3 border-b border-gray-100 pb-4">
                       <Image
                         src="/images/icons/mainbrand-1.svg"
                         alt=""
@@ -98,9 +98,9 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative col-span-3 lg:col-span-1 p-2 pb-4 lg:p-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+                <div className="relative col-span-3 lg:col-span-1 p-2 pb-4 lg:p-4 border-b lg:border-b-0 lg:border-r border-gray-100">
                   <div className="grid">
-                    <div className="relative text-sm flex items-center gap-x-3 border-b border-gray-800 pb-4">
+                    <div className="relative text-sm flex items-center gap-x-3 border-b border-gray-100 pb-4">
                       <Image
                         src="/images/icons/mainbrand-1.svg"
                         alt=""
@@ -163,14 +163,14 @@ const Home: NextPage = () => {
           <Container>
             <div className="relative mt-[-60px] lg:mt-20 w-full grid grid-cols-3 gap-4">
               <div className="relative col-span-3 lg:col-span-1">
-                <div className="relative w-full shadow-full-match min-h-48 bg-black rounded-md py-4">
-                  <div className="text-md font-bold border-b border-gray-800 pb-4 px-4">
+                <div className="relative w-full shadow-full-match min-h-48 bg-white rounded-md py-4">
+                  <div className="text-md font-bold border-b border-gray-100 pb-4 px-4">
                     Latest Blocks
                   </div>
                   <div className="relative w-full h-auto max-h-[500px] overflow-y-auto px-4 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent">
-                    <div className="relative py-4 border-b border-gray-800 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
+                    <div className="relative py-4 border-b border-gray-100 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
                       <div className="relative hidden md:flex lg:hidden xl:flex items-center gap-x-2">
-                        <div className="relative w-12 h-12 bg-dark rounded-sm flex items-center justify-center">
+                        <div className="relative w-12 h-12 bg-light rounded-sm flex items-center justify-center">
                           BK
                         </div>
                         <div>
@@ -206,22 +206,22 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="border-t border-gray-800 text-center pt-4 px-4">
-                    <button className="relative w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                  <div className="border-t border-gray-100 text-center pt-4 px-4">
+                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
                       View All Blocks
                     </button>
                   </div>
                 </div>
               </div>
               <div className="relative col-span-3 lg:col-span-1">
-                <div className="relative w-full shadow-full-match min-h-48 bg-black rounded-md py-4">
-                  <div className="text-md font-bold border-b border-gray-800 pb-4 px-4">
+                <div className="relative w-full shadow-full-match min-h-48 bg-white rounded-md py-4">
+                  <div className="text-md font-bold border-b border-gray-100 pb-4 px-4">
                     Latest Blocks
                   </div>
                   <div className="relative w-full h-auto max-h-[500px] overflow-y-auto px-4 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent">
-                    <div className="relative py-4 border-b border-gray-800 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
+                    <div className="relative py-4 border-b border-gray-100 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
                       <div className="relative hidden md:flex lg:hidden xl:flex items-start gap-x-2">
-                        <div className="relative w-12 h-12 bg-dark rounded-full flex items-center justify-center">
+                        <div className="relative w-12 h-12 bg-light rounded-full flex items-center justify-center">
                           Tx
                         </div>
                         <div>
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
                           <p className="text-xs text-gray-400">
                             2 secs ago{" "}
                             <span
-                              className="tooltip before:text-xs bg-dark py-1 px-2 rounded-md"
+                              className="tooltip before:text-xs bg-light py-1 px-2 rounded-md"
                               data-tip="Amount"
                             >
                               0.00158 ETH
@@ -263,16 +263,16 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="border-t border-gray-800 text-center pt-4 px-4">
-                    <button className="relative w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                  <div className="border-t border-gray-100 text-center pt-4 px-4">
+                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
                       View All Blocks
                     </button>
                   </div>
                 </div>
               </div>
               <div className="relative col-span-3 lg:col-span-1">
-                <div className="relative w-full shadow-full-match min-h-48 bg-black rounded-md py-4">
-                  <div className="text-md font-bold border-b border-gray-800 pb-4 px-4">
+                <div className="relative w-full shadow-full-match min-h-48 bg-white rounded-md py-4">
+                  <div className="text-md font-bold border-b border-gray-100 pb-4 px-4">
                     <div
                       className="tooltip before:text-xs before:font-normal before:max-w-48"
                       data-tip="Latest Transactions submitted from L1 to L2"
@@ -281,9 +281,9 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                   <div className="relative w-full h-auto max-h-[500px] overflow-y-auto px-4 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent">
-                    <div className="relative py-4 border-b border-gray-800 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
+                    <div className="relative py-4 border-b border-gray-100 last:border-b-0 flex items-center justify-between gap-x-6 text-sm">
                       <div className="relative hidden md:flex lg:hidden xl:flex items-center gap-x-2">
-                        <div className="relative w-12 h-12 bg-dark rounded-full flex items-center justify-center">
+                        <div className="relative w-12 h-12 bg-light rounded-full flex items-center justify-center">
                           BK
                         </div>
                         <div>
@@ -317,8 +317,8 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="border-t border-gray-800 text-center pt-4 px-4">
-                    <button className="relative w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                  <div className="border-t border-gray-100 text-center pt-4 px-4">
+                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
                       View All Blocks
                     </button>
                   </div>

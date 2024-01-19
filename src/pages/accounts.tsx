@@ -21,7 +21,7 @@ const Accounts: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
             <div className="flex items-center justify-between flex-col md:flex-row gap-4 mb-8">
               <div className="relative">
@@ -38,14 +38,14 @@ const Accounts: FC = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Rank</th>
-                  <th className="text-sm text-white font-bold">Address</th>
-                  <th className="text-sm text-white font-bold">Name Tag</th>
-                  <th className="text-sm text-white font-bold">Balance</th>
-                  <th className="text-sm text-white font-bold">Percentage</th>
-                  <th className="text-sm text-white font-bold">Txn Count</th>
+                  <th className="text-sm text-black font-bold">Rank</th>
+                  <th className="text-sm text-black font-bold">Address</th>
+                  <th className="text-sm text-black font-bold">Name Tag</th>
+                  <th className="text-sm text-black font-bold">Balance</th>
+                  <th className="text-sm text-black font-bold">Percentage</th>
+                  <th className="text-sm text-black font-bold">Txn Count</th>
                 </tr>
               </thead>
               <tbody>

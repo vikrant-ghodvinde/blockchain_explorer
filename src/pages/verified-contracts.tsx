@@ -23,9 +23,9 @@ const VerifiedContracts: NextPage = () => {
             </ul>
           </div>
         </div>
-        <div className="relative w-full shadow-full-match bg-black rounded-md p-4">
+        <div className="relative w-full shadow-full-match bg-white rounded-md p-4">
           <div className="relative w-full overflow-x-auto">
-            <div className="relative w-full pb-4 mb-4 border-b border-gray-800 flex items-center flex-col md:flex-row justify-between">
+            <div className="relative w-full pb-4 mb-4 border-b border-gray-100 flex items-center flex-col md:flex-row justify-between">
               <FilterDropdown />
               <TableSearch />
             </div>
@@ -38,34 +38,34 @@ const VerifiedContracts: NextPage = () => {
               <Pagination />
             </div>
             <table className="table align-middle whitespace-nowrap text-xs">
-              <thead className="bg-dark">
+              <thead className="bg-light">
                 <tr>
-                  <th className="text-sm text-white font-bold">Address</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Address</th>
+                  <th className="text-sm text-black font-bold">
                     Contract Name
                   </th>
-                  <th className="text-sm text-white font-bold">Compiler</th>
-                  <th className="text-sm text-white font-bold">Version</th>
-                  <th className="text-sm text-white font-bold">Balance</th>
-                  <th className="text-sm text-white font-bold">Txns</th>
-                  <th className="text-sm text-white font-bold">Setting</th>
-                  <th className="text-sm text-white font-bold">Verified</th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">Compiler</th>
+                  <th className="text-sm text-black font-bold">Version</th>
+                  <th className="text-sm text-black font-bold">Balance</th>
+                  <th className="text-sm text-black font-bold">Txns</th>
+                  <th className="text-sm text-black font-bold">Setting</th>
+                  <th className="text-sm text-black font-bold">Verified</th>
+                  <th className="text-sm text-black font-bold">
                     Audited{" "}
                     <span
                       className="tooltip tooltip-left before:text-xs"
                       data-tip="Smart Contracts Audit and Security"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
-                  <th className="text-sm text-white font-bold">
+                  <th className="text-sm text-black font-bold">
                     License{" "}
                     <span
                       className="tooltip tooltip-left before:text-xs"
                       data-tip="Contract Source Code License Type, click for more info"
                     >
-                      <i className="fas fa-circle-exclamation ms-0.5"></i>
+                      <i className="fas fa-circle-exclamation ms-0.5 text-gray-500"></i>
                     </span>
                   </th>
                 </tr>
@@ -103,10 +103,10 @@ const VerifiedContracts: NextPage = () => {
                   <td>2</td>
                   <td>
                     <div className="flex items-center gap-2">
-                      <span className="flex items-center justify-center text-white text-[8px] bg-gray-900 w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Optimization Enabled">
+                      <span className="flex items-center justify-center text-gray-500 text-[8px] bg-light w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Optimization Enabled">
                         <i className="fas fa-bolt"></i>
                       </span>
-                      <span className="flex items-center justify-center text-white text-[8px] bg-gray-900 w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Constructor Arguments">
+                      <span className="flex items-center justify-center text-gray-500 text-[8px] bg-light w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Constructor Arguments">
                         <i className="fas fa-wrench"></i>
                       </span>
                       <span></span>
@@ -148,10 +148,10 @@ const VerifiedContracts: NextPage = () => {
                   <td>2</td>
                   <td>
                     <div className="flex items-center gap-2">
-                      <span className="flex items-center justify-center text-white text-[8px] bg-gray-900 w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Optimization Enabled">
+                      <span className="flex items-center justify-center text-gray-500 text-[8px] bg-light w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Optimization Enabled">
                         <i className="fas fa-bolt"></i>
                       </span>
-                      <span className="flex items-center justify-center text-white text-[8px] bg-gray-900 w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Constructor Arguments">
+                      <span className="flex items-center justify-center text-gray-500 text-[8px] bg-light w-6 h-6 rounded-full tooltip before:text-xs" data-tip="Constructor Arguments">
                         <i className="fas fa-wrench"></i>
                       </span>
                       <span></span>

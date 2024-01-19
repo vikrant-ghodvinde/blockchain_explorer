@@ -13,13 +13,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "primary-gradient": "linear-gradient(45deg, #11ffbd, #aaffa9)",
-        "primary-gradient-reversed": "linear-gradient(45deg, #aaffa9, #11ffbd)",
+        "primary-gradient": "linear-gradient(45deg, #02d98e, #11ffbd)",
+        "primary-gradient-reversed": "linear-gradient(45deg, #11ffbd, #02d98e)",
       },
       colors: {
-        primary: "#11ffbd",
-        secondary: "#aaffa9",
+        primary: "#02d98e",
+        secondary: "#11ffbd",
         dark: "#1c1c1c",
+        light: "#f8f9fa",
       },
       boxShadow: {
         "nav-s": "5px 0 10px rgba(155, 155, 155, 0.2)",

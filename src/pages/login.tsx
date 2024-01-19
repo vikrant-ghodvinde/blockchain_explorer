@@ -49,7 +49,7 @@ const Login: NextPage = () => {
                       className="checkbox checkbox-sm checkbox-success"
                     />
                     <span
-                      className="text-white text-sm tooltip tooltip-bottom before:text-xs before:max-w-48 before:bg-black after:bg-black"
+                      className="text-black text-sm tooltip tooltip-bottom before:text-xs before:max-w-48"
                       data-tip="Please do not check this box if you are using a public or shared PC"
                     >
                       Remember & Auto Login
