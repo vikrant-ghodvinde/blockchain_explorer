@@ -18,8 +18,10 @@ const config: Config = {
       },
       colors: {
         primary: "#02d98e",
+        "primary-light": "rgba(2, 217, 142, 0.1)",
         secondary: "#11ffbd",
         dark: "#1c1c1c",
+        "light-dark": "#77838f",
         light: "#f8f9fa",
       },
       boxShadow: {

@@ -9,7 +9,7 @@ export const ScrollToTop: FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [offset]);
   return (
-    <button className={`fixed right-6 bottom-6 w-10 h-10 bg-primary-gradient rounded-md transition-all duration-300 text-black ${offset > 100 ? "visible opacity-50 hover:opacity-100": "invisible opacity-0"} z-50`} onClick={() => window.scrollTo(0, 0)}>
+    <button type="button" className={`fixed right-6 bottom-6 w-10 h-10 bg-primary-gradient rounded-md transition-all duration-300 text-black ${offset > 100 ? "visible opacity-50 hover:opacity-100": "invisible opacity-0"} z-50`} onClick={() => window.scrollTo(0, 0)}>
       <i className="fas fa-arrow-up"></i>
     </button>
   );

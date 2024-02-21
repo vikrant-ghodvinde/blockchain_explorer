@@ -39,12 +39,12 @@ const Footer: FC = () => {
               <i className="fas fa-gears"></i>
               Preferences
             </button>
-            <button
+            {/* <button
               type="button"
               className="relative bg-light py-1.5 px-2 rounded-md text-xs hover:bg-white hover:text-black active:bg-white active:text-black transition duration-300"
             >
               <i className="fas fa-moon"></i>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="relative w-full flex items-center flex-col justify-center gap-4 sm:flex-row sm:justify-between py-6">

@@ -21,6 +21,7 @@ body {
   color: #fff;
   text-wrap: wrap;
   word-break: break-all;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -82,4 +83,34 @@ select.select-sm {
       transparent 40.99%
     ),
     linear-gradient(-45deg, #fff 50%, var(--chkbg) 50.99%);
+}
+
+/* PROFILE NAVIGATION */
+.profile-menu-item {
+  @apply relative border-b last:border-b-0 border-gray-100 z-10;
+}
+
+.profile-menu-item.active {
+  @apply before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-gradient before:-z-10 before:transition before:duration-300;
+}
+
+.profile-menu-item .profile-menu-link {
+  @apply flex items-center gap-1 text-sm px-4 py-3 text-white transition duration-200;
+}
+
+.profile-menu-item:not(.active) .profile-menu-link {
+  @apply flex items-center gap-1 text-sm px-4 py-3 text-black hover:text-primary transition duration-200
+}
+
+/* CONFIGURATION */
+.tabs-bordered > .tab {
+  @apply border-gray-100 font-semibold text-black transition-all duration-300 outline-none
+}
+
+.tab.tab-active:not(.tab-disabled):not([disabled]), .tab:is(input:checked) {
+  @apply border-primary text-primary
+}
+
+.alert-secondary {
+  @apply bg-light border-light rounded-md text-sm text-black flex items-center justify-center gap-2 py-3
 }

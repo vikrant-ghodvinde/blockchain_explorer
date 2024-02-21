@@ -5,6 +5,7 @@ import { Container } from "../Container/Container";
 import { useRouter } from "next/router";
 
 const Navbar: FC = () => {
+  const [loggedIn, setLoggedIn] = useState(true);
   const [menuToggle, setMenuToggle] = useState(false);
   const router = useRouter();
   const blockchainRoutes =
@@ -83,14 +84,13 @@ const Navbar: FC = () => {
                 </Link>
               </li>
               <li className="relative block py-2 px-4 group before:absolute before:content-['\f107'] before:font-awesome before:font-[900] before:right-2 lg:before:right-0 before:top-3.5 before:text-xs">
-                <a
-                  href="#"
-                  className={`group-hover:text-primary ${
+                <span
+                  className={`group-hover:text-primary cursor-pointer ${
                     blockchainRoutes ? "text-primary" : ""
                   }`}
                 >
                   Blockchain
-                </a>
+                </span>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-[-80%] w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
                   <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
@@ -201,14 +201,13 @@ const Navbar: FC = () => {
                 </div>
               </li>
               <li className="relative block py-2 px-4 group before:absolute before:content-['\f107'] before:font-awesome before:font-[900] before:right-2 lg:before:right-0 before:top-3.5 before:text-xs">
-                <a
-                  href="#"
-                  className={`group-hover:text-primary ${
+                <span
+                  className={`group-hover:text-primary cursor-pointer ${
                     tokensRoutes ? "text-primary" : ""
                   }`}
                 >
                   Tokens
-                </a>
+                </span>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
                   <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
@@ -237,21 +236,22 @@ const Navbar: FC = () => {
                 </div>
               </li>
               <li className="relative block py-2 px-4 group before:absolute before:content-['\f107'] before:font-awesome before:font-[900] before:right-2 lg:before:right-0 before:top-3.5 before:text-xs">
-                <a
-                  href="#"
-                  className={`group-hover:text-primary ${
+                <span
+                  className={`group-hover:text-primary cursor-pointer ${
                     nftsRoutes ? "text-primary" : ""
                   }`}
                 >
                   NFTs
-                </a>
+                </span>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
                   <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
                       <Link
                         href="/nft-top-contracts"
                         className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
-                          router.pathname === "/nft-top-contracts" ? "text-primary" : ""
+                          router.pathname === "/nft-top-contracts"
+                            ? "text-primary"
+                            : ""
                         }`}
                       >
                         Top NFTs
@@ -261,7 +261,9 @@ const Navbar: FC = () => {
                       <Link
                         href="/nft-top-mints"
                         className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
-                          router.pathname === "/nft-top-mints" ? "text-primary" : ""
+                          router.pathname === "/nft-top-mints"
+                            ? "text-primary"
+                            : ""
                         }`}
                       >
                         Top Mints
@@ -271,7 +273,9 @@ const Navbar: FC = () => {
                       <Link
                         href="/nft-transfers"
                         className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
-                          router.pathname === "/nft-transfers" ? "text-primary" : ""
+                          router.pathname === "/nft-transfers"
+                            ? "text-primary"
+                            : ""
                         }`}
                       >
                         Latest Transfers
@@ -281,7 +285,9 @@ const Navbar: FC = () => {
                       <Link
                         href="/nft-latest-mints"
                         className={`relative block w-full p-2 rounded-md bg-transparent hover:bg-light ${
-                          router.pathname === "/nft-latest-mints" ? "text-primary" : ""
+                          router.pathname === "/nft-latest-mints"
+                            ? "text-primary"
+                            : ""
                         }`}
                       >
                         Latest Mints
@@ -291,9 +297,9 @@ const Navbar: FC = () => {
                 </div>
               </li>
               <li className="relative block py-2 px-4 group before:absolute before:content-['\f107'] before:font-awesome before:font-[900] before:right-2 lg:before:right-0 before:top-3.5 before:text-xs">
-                <a href="#" className="group-hover:text-primary">
+                <span className="group-hover:text-primary cursor-pointer">
                   Resources
-                </a>
+                </span>
                 <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
                   <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
                     <li>
@@ -347,8 +353,103 @@ const Navbar: FC = () => {
                   </ul>
                 </div>
               </li>
+              {loggedIn ? (
+                <li className="relative block py-2 px-4 group before:absolute before:content-['\f107'] before:font-awesome before:font-[900] before:right-2 lg:before:right-0 before:top-3.5 before:text-xs">
+                  <span className="group-hover:text-primary cursor-pointer">
+                    <i className="fas fa-user-circle text-sm me-px"></i> John227
+                  </span>
+                  <div className="relative lg:absolute top-0 lg:top-[130%] lg:group-hover:top-full right-auto lg:right-0 w-full lg:w-60 lg:pt-4 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible h-0 lg:h-auto overflow-hidden lg:overflow-auto group-hover:h-auto group-hover:pt-4 transition-all duration-300">
+                    <ul className="relative text-[13px] group-hover:border lg:group-hover:border-b-0 lg:group-hover:border-l-0 lg:group-hover:border-r-0 rounded-md lg:rounded-none lg:border-t-2 border-primary bg-white p-3">
+                      <li>
+                        <Link
+                          href="/my-account"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          My Profile
+                        </Link>
+                      </li>
+                      <hr className="my-3 border-gray-100" />
+                      <li>
+                        <Link
+                          href="/my-address"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Watch List
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/my-private-notes"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Txn Private Notes
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/my-private-address"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Private Name Tags
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/my-token-ignore"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Token Ignore List
+                        </Link>
+                      </li>
+                      <hr className="my-3 border-gray-100" />
+                      <li>
+                        <Link
+                          href="/my-api-key"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          API Keys
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/my-verified-address"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Verified Address
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/my-custom-abi"
+                          className="relative block w-full p-2 rounded-md bg-transparent hover:bg-light"
+                        >
+                          Custom ABI
+                        </Link>
+                      </li>
+                      <hr className="my-3 border-gray-100" />
+                      <li>
+                        <button
+                          type="button"
+                          className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
+                        >
+                          Sign Out
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              ) : (
+                <li className="ps-4 border-l-0 lg:border-l border-gray-100">
+                  <Link
+                    href="/login"
+                    className="hover:text-primary transition-all duration-300"
+                  >
+                    <i className="fas fa-user-circle text-sm me-px"></i> Sign In
+                  </Link>
+                </li>
+              )}
             </ul>
-            <div className="flex items-center gap-x-4 ps-4 border-l-0 lg:border-l border-gray-100">
+            <div className="relative">
               <div
                 className="block lg:hidden text-lg"
                 onClick={() => setMenuToggle(!menuToggle)}
@@ -368,12 +469,6 @@ const Navbar: FC = () => {
                   />
                 </svg>
               </div>
-              <Link
-                href="/login"
-                className="hover:text-primary transition-all duration-300"
-              >
-                <i className="fas fa-user-circle text-sm me-px"></i> Sign In
-              </Link>
             </div>
           </div>
         </div>

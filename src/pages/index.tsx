@@ -1,4 +1,4 @@
-import { Chart } from "@/components/Chart/Chart";
+import { TransactionChart } from "@/components/TransactionChart/TransactionChart";
 import { Container } from "@/components/Container/Container";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className="relative col-span-3 lg:col-span-1 p-4">
-                  <Chart />
+                  {/* <TransactionChart /> */}
                 </div>
               </div>
             </div>
@@ -207,7 +207,10 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                   <div className="border-t border-gray-100 text-center pt-4 px-4">
-                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                    <button
+                      type="button"
+                      className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
+                    >
                       View All Blocks
                     </button>
                   </div>
@@ -264,7 +267,10 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                   <div className="border-t border-gray-100 text-center pt-4 px-4">
-                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                    <button
+                      type="button"
+                      className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
+                    >
                       View All Blocks
                     </button>
                   </div>
@@ -318,7 +324,10 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                   <div className="border-t border-gray-100 text-center pt-4 px-4">
-                    <button className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
+                    <button
+                      type="button"
+                      className="relative btn btn-sm border-0 w-full py-1.5 px-6 bg-primary-gradient text-black font-semibold rounded-md text-xs overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10"
+                    >
                       View All Blocks
                     </button>
                   </div>
