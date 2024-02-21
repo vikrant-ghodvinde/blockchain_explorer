@@ -1,37 +1,9 @@
-import { FC, useEffect } from "react";
-import { Chart } from "chart.js";
+import { FC } from "react"
 
-export const TransactionChart: FC = () => {
-  useEffect(() => {
-    let canvas = document.getElementById("myChart") as HTMLCanvasElement | null;
-    let ctx = canvas?.getContext("2d");
-    let myChart = new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: [
-          "Sunday",
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        datasets: [
-          {
-            data: [86, 114, 106, 106, 107, 111, 133],
-            label: "Applied",
-            borderColor: "#3e95cd",
-            backgroundColor: "#7bb6dd",
-            fill: false,
-          },
-        ],
-      },
-    });
-  }, []);
+const TransactionChart: FC = () => {
   return (
-    <div className="relative w-full">
-      <canvas id="myChart" className="w-full h-12"></canvas>
-    </div>
-  );
-};
+    <div>TransactionChart</div>
+  )
+ }
+
+ export default TransactionChart
