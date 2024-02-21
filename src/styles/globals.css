@@ -114,3 +114,11 @@ select.select-sm {
 .alert-secondary {
   @apply bg-light border-light rounded-md text-sm text-black flex items-center justify-center gap-2 py-3
 }
+
+/* BUTTONS */
+.btn-grey {
+  @apply relative py-1.5 px-4 bg-light-dark text-white text-xs font-medium rounded-md overflow-hidden
+}
+.btn-danger {
+  @apply relative py-1.5 px-4 bg-red-600 text-white text-xs font-medium rounded-md overflow-hidden hover:shadow-md transition duration-300
+}

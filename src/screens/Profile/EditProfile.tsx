@@ -187,14 +187,14 @@ const EditProfile: FC = () => {
                 <button className="relative py-1.5 px-4 bg-primary-gradient text-black text-xs font-medium rounded-md overflow-hidden z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-primary-gradient-reversed before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:-z-10">
                   Save Changes
                 </button>
-                <button type="button" className="relative py-1.5 px-4 bg-light-dark text-white text-xs font-medium rounded-md overflow-hidden">
+                <button type="button" className="btn-grey">
                   Cancel
                 </button>
               </div>
             </div>
             <div className="relative col-span-2 md:col-span-1">
               <div className="text-center md:text-end">
-                <button type="button" className="relative py-1.5 px-4 bg-red-600 text-white text-xs font-medium rounded-md overflow-hidden hover:shadow-md transition duration-300">
+                <button type="button" className="btn-danger">
                   <i className="far fa-trash-can me-1"></i> Delete Account
                 </button>
               </div>
