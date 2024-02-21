@@ -41,6 +41,7 @@ const EditProfile: FC = () => {
               <input
                 type="password"
                 placeholder="Password"
+                autoComplete="false"
                 className="w-full h-11 bg-transparent px-4 rounded-md outline-none border"
               />
             </div>
@@ -55,6 +56,7 @@ const EditProfile: FC = () => {
               <input
                 type="password"
                 placeholder="New Password"
+                autoComplete="false"
                 className="w-full h-11 bg-transparent px-4 rounded-md outline-none border"
               />
             </div>
@@ -71,6 +73,7 @@ const EditProfile: FC = () => {
               <input
                 type="password"
                 placeholder="Confirm Password"
+                autoComplete="false"
                 className="w-full h-11 bg-transparent px-4 rounded-md outline-none border"
               />
             </div>
@@ -108,7 +111,7 @@ const EditProfile: FC = () => {
               <div className="flex items-center gap-2">
                 <div className="relative w-12 min-w-12 h-12 bg-dark rounded-full overflow-hidden">
                   <Image
-                    src="/"
+                    src="/images/user.png"
                     alt=""
                     width={100}
                     height={100}
@@ -174,6 +177,73 @@ const EditProfile: FC = () => {
                     (click to Subscribe for Newsletter)
                   </span>
                 </label>
+              </div>
+              <div className="relative mt-8">
+                <div className="relative py-4 text-gray-300">
+                  Please let us know why you unsubscribed:
+                </div>
+                <div className="grid grid-cols-1">
+                  <div className="relative">
+                    <div className="form-control">
+                      <label className="cursor-pointer flex items-center gap-x-2">
+                        <input
+                          type="radio"
+                          name="unsubscribed_reason"
+                          className="radio radio-accent"
+                        />
+                        <span className="text-black">
+                          I no longer want to receive these emails
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-control">
+                      <label className="cursor-pointer flex items-center gap-x-2">
+                        <input
+                          type="radio"
+                          name="unsubscribed_reason"
+                          className="radio radio-accent"
+                        />
+                        <span className="text-black">
+                          I never signed up for this mailing list
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-control">
+                      <label className="cursor-pointer flex items-center gap-x-2">
+                        <input
+                          type="radio"
+                          name="unsubscribed_reason"
+                          className="radio radio-accent"
+                        />
+                        <span className="text-black">
+                          The emails are inappropriate
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-control">
+                      <label className="cursor-pointer flex items-center gap-x-2">
+                        <input
+                          type="radio"
+                          name="unsubscribed_reason"
+                          className="radio radio-accent"
+                        />
+                        <span className="text-black">
+                          The emails are spam and should be reported
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-control">
+                      <label className="cursor-pointer flex items-center gap-x-2">
+                        <input
+                          type="radio"
+                          name="unsubscribed_reason"
+                          className="radio radio-accent"
+                        />
+                        <span className="text-black">Other</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
