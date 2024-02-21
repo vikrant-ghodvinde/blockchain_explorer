@@ -1,4 +1,3 @@
-import { TransactionChart } from "@/components/TransactionChart/TransactionChart";
 import { Container } from "@/components/Container/Container";
 import { NextPage } from "next";
 import Image from "next/image";
