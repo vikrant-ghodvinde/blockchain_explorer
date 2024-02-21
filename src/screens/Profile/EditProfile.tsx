@@ -1,7 +1,9 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Image from "next/image";
+import DeleteProfile from "@/components/Modals/DeleteProfile/DeleteProfile";
 
 const EditProfile: FC = () => {
+  const [newsletter, setNewsletter] = useState(true);
   return (
     <div className="relative w-full">
       <div className="grid grid-cols-1 gap-2 border-b border-gray-100 pb-8">
@@ -169,6 +171,8 @@ const EditProfile: FC = () => {
                   <input
                     type="checkbox"
                     className="checkbox checkbox-sm checkbox-success"
+                    onChange={() => setNewsletter(!newsletter)}
+                    checked={newsletter}
                   />
                   <span
                     className="text-black text-sm tooltip tooltip-bottom before:text-xs before:max-w-48"
@@ -178,73 +182,83 @@ const EditProfile: FC = () => {
                   </span>
                 </label>
               </div>
-              <div className="relative mt-8">
-                <div className="relative py-4 text-gray-300">
-                  Please let us know why you unsubscribed:
-                </div>
-                <div className="grid grid-cols-1">
-                  <div className="relative">
-                    <div className="form-control">
-                      <label className="cursor-pointer flex items-center gap-x-2">
-                        <input
-                          type="radio"
-                          name="unsubscribed_reason"
-                          className="radio radio-accent"
-                        />
-                        <span className="text-black">
-                          I no longer want to receive these emails
-                        </span>
-                      </label>
+              {!newsletter && (
+                <div className="relative mt-8">
+                  <div className="relative py-4 text-gray-300">
+                    Please let us know why you unsubscribed:
+                  </div>
+                  <div className="grid grid-cols-1 gap-1">
+                    <div className="relative">
+                      <div className="form-control">
+                        <label className="cursor-pointer flex items-center gap-x-2">
+                          <input
+                            type="radio"
+                            name="unsubscribed_reason"
+                            className="radio radio-sm radio-accent"
+                          />
+                          <span className="text-black">
+                            I no longer want to receive these emails
+                          </span>
+                        </label>
+                      </div>
                     </div>
-                    <div className="form-control">
-                      <label className="cursor-pointer flex items-center gap-x-2">
-                        <input
-                          type="radio"
-                          name="unsubscribed_reason"
-                          className="radio radio-accent"
-                        />
-                        <span className="text-black">
-                          I never signed up for this mailing list
-                        </span>
-                      </label>
+                    <div className="relative">
+                      <div className="form-control">
+                        <label className="cursor-pointer flex items-center gap-x-2">
+                          <input
+                            type="radio"
+                            name="unsubscribed_reason"
+                            className="radio radio-sm radio-accent"
+                          />
+                          <span className="text-black">
+                            I never signed up for this mailing list
+                          </span>
+                        </label>
+                      </div>
                     </div>
-                    <div className="form-control">
-                      <label className="cursor-pointer flex items-center gap-x-2">
-                        <input
-                          type="radio"
-                          name="unsubscribed_reason"
-                          className="radio radio-accent"
-                        />
-                        <span className="text-black">
-                          The emails are inappropriate
-                        </span>
-                      </label>
+                    <div className="relative">
+                      <div className="form-control">
+                        <label className="cursor-pointer flex items-center gap-x-2">
+                          <input
+                            type="radio"
+                            name="unsubscribed_reason"
+                            className="radio radio-sm radio-accent"
+                          />
+                          <span className="text-black">
+                            The emails are inappropriate
+                          </span>
+                        </label>
+                      </div>
                     </div>
-                    <div className="form-control">
-                      <label className="cursor-pointer flex items-center gap-x-2">
-                        <input
-                          type="radio"
-                          name="unsubscribed_reason"
-                          className="radio radio-accent"
-                        />
-                        <span className="text-black">
-                          The emails are spam and should be reported
-                        </span>
-                      </label>
+                    <div className="relative">
+                      <div className="form-control">
+                        <label className="cursor-pointer flex items-center gap-x-2">
+                          <input
+                            type="radio"
+                            name="unsubscribed_reason"
+                            className="radio radio-sm radio-accent"
+                          />
+                          <span className="text-black">
+                            The emails are spam and should be reported
+                          </span>
+                        </label>
+                      </div>
                     </div>
-                    <div className="form-control">
-                      <label className="cursor-pointer flex items-center gap-x-2">
-                        <input
-                          type="radio"
-                          name="unsubscribed_reason"
-                          className="radio radio-accent"
-                        />
-                        <span className="text-black">Other</span>
-                      </label>
+                    <div className="relative">
+                      <div className="form-control">
+                        <label className="cursor-pointer flex items-center gap-x-2">
+                          <input
+                            type="radio"
+                            name="unsubscribed_reason"
+                            className="radio radio-sm radio-accent"
+                          />
+                          <span className="text-black">Other</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
@@ -264,7 +278,18 @@ const EditProfile: FC = () => {
             </div>
             <div className="relative col-span-2 md:col-span-1">
               <div className="text-center md:text-end">
-                <button type="button" className="btn-danger">
+                <button
+                  type="button"
+                  className="btn-danger"
+                  onClick={() => {
+                    const modal = document.getElementById(
+                      "delete_profile"
+                    ) as HTMLDialogElement | null;
+                    if (modal) {
+                      modal.showModal();
+                    }
+                  }}
+                >
                   <i className="far fa-trash-can me-1"></i> Delete Account
                 </button>
               </div>
@@ -272,6 +297,7 @@ const EditProfile: FC = () => {
           </div>
         </div>
       </div>
+      <DeleteProfile />
     </div>
   );
 };
